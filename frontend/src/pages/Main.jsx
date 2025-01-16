@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Grid from "../components/Grid";
+import { myContext } from "../App";
 
 function Main() {
+  const myState = useContext(myContext);
+  console.log(myState);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submitted");

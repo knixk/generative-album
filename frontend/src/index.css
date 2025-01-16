@@ -58,7 +58,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
   /* height: 300px; */
   /* height: 90vh; */
 }
@@ -70,7 +70,7 @@ nav {
   flex-direction: column;
   width: 300px;
   gap: 10px;
-  background-color: red;
+  /* background-color: red; */
 
 }
 
