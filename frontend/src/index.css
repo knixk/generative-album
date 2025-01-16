@@ -5,6 +5,9 @@
   /* border: 1px solid plum; */
 }
 
+body {
+  background-color: #e2e2e2;
+}
 
 .card__container {
   display: flex;
@@ -24,11 +27,11 @@
   justify-content: center;
   gap: 3rem;
   max-width: 900px;
-  background-color:antiquewhite;
+  /* background-color:antiquewhite; */
 }
 
 .album__container {
-  margin: 1.5rem 1rem;
+  margin: 3rem 1rem;
   display: flex;
   justify-content: center;
 }
