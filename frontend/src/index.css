@@ -80,3 +80,12 @@ input, button {
   outline: none;
   border: none;
 }
+
+.home__container {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* background-color: red; */
+  /* height: 90vh; */
+  /* align-self: center; */
+  /* margin: 1rem 0; */
+}

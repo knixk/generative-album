@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div className="home__container">
+      <h2>Welcome to our Generative Album</h2>
+      <button>Get started</button>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
