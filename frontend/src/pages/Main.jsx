@@ -1,10 +1,16 @@
 import React, { useContext } from "react";
 import Grid from "../components/Grid";
 import { myContext } from "../App";
+import { useNavigate } from "react-router-dom";
+import { Toaster, notify } from "react-hot-toast";
 
 function Main() {
   const myState = useContext(myContext);
+  console.log("==========================>");
   console.log(myState);
+  console.log("==========================>");
+
+  // const { formData, setFormData } = myState;
 
   const handleSubmit = (e) => {
     e.preventDefault();

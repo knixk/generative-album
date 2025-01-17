@@ -10,6 +10,8 @@ export const myContext = createContext();
 
 function App() {
   const [formData, setFormData] = useState();
+  const [lastGeneratedImg, setLastGeneratedImg] = useState();
+  
   return (
     <myContext.Provider value={(formData, setFormData)}>
       <Router>
