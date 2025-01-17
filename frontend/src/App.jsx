@@ -11,9 +11,19 @@ export const myContext = createContext();
 function App() {
   const [formData, setFormData] = useState();
   const [lastGeneratedImg, setLastGeneratedImg] = useState();
-  
+  const [submitDisabled, setSubmitDisabled] = useState(false);
+
   return (
-    <myContext.Provider value={(formData, setFormData)}>
+    <myContext.Provider
+      value={
+        (formData,
+        setFormData,
+        lastGeneratedImg,
+        setLastGeneratedImg,
+        submitDisabled,
+        setSubmitDisabled)
+      }
+    >
       <Router>
         <Navbar />
         <Routes>
