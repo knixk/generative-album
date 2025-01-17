@@ -4,6 +4,12 @@ import { myContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import io from "socket.io-client";
+const socket = io("http://localhost:3000");
+
+function submitImage(imageData) {
+  socket.emit("new-image", imageData); // Send image to server
+}
 
 function Main() {
   const myState = useContext(myContext);
@@ -23,6 +29,9 @@ function Main() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submitted");
+
+    //  ------ submit the iamge here.
+    // submitImage("link")
   };
 
   useEffect(() => {
@@ -47,7 +56,7 @@ function Main() {
 
         console.log("======== im data =========>");
         console.log(data);
-        console.log("======== im data =========>"); 
+        console.log("======== im data =========>");
       } catch (err) {
         console.error(err);
       }
