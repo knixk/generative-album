@@ -30,13 +30,13 @@ body {
   display: grid;
   /* flex-wrap: wrap; */
   /* justify-content: center; */
-  background-color: rgb(214, 210, 210);
+  background-color: rgb(226, 226, 226);
   margin: 0 1rem;
   margin-right: 3rem;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   border-radius: 10px;
   gap: 1rem;
-  width: 1080px;
+  width: 800px;
   justify-content: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* max-width: 900px; */
@@ -65,7 +65,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  background-color: brown;
+  background-color: rgb(153, 41, 41);
   color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   letter-spacing: 3px;

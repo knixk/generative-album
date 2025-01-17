@@ -16,12 +16,12 @@ const data = [
   },
   {
     id: "123sda12",
-    img: img,
+    img: "https://cdn.pixabay.com/photo/2023/03/11/22/21/ai-generated-7845461_640.jpg",
     name: "Ayush Rana",
   },
   {
     id: "12312312",
-    img: img,
+    img: "https://cdn.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747149_1280.jpg",
     name: "Saniya Sultana",
   },
 ];
