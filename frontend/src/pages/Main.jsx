@@ -3,7 +3,7 @@ import Grid from "../components/Grid";
 import { myContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-import axios from "axios  ";
+import axios from "axios";
 
 function Main() {
   const myState = useContext(myContext);
@@ -65,8 +65,8 @@ function Main() {
             toast("Please wait while we ready your creation...");
 
             setTimeout(() => {
-              toast.success("Submitted!");
-            }, 2000);
+              toast.success("Done!");
+            }, 4000);
           }}
         >
           Submit
