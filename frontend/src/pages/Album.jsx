@@ -44,6 +44,11 @@ const data = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69EWR5a90jYQWOYu8vdbbzLasqQNWHhyVnA&s",
     name: "Priyanka Sharma",
   },
+  {
+    id: "123sda212312",
+    img: "https://imgv3.fotor.com/images/gallery/a-3d-girl-cartoon-character-generated-by-cartoon-character-maker-in-Fotor.jpg",
+    name: "Om Sharma",
+  },
 ];
 
 function Album() {
