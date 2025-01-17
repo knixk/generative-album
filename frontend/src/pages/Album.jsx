@@ -1,4 +1,6 @@
 import React from "react";
+
+// recieve the image on port 
 import io from 'socket.io-client';
 const socket = io('http://localhost:3000');
 

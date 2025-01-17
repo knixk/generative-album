@@ -4,6 +4,8 @@ import { myContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+
+// send the data on port
 import io from "socket.io-client";
 const socket = io("http://localhost:3000");
 
