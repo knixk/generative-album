@@ -13,34 +13,46 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
+  border-radius: 10px 10px 10px 10px;
   /* border-radius: 2px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .generated__img {
-  width: 300px;
+  width: 100%;
   border-radius: 10px 10px 0 0;
+  height: 150px;
+  /* background-image:; */
+  
 }
 
 .album__grid {
   display: grid;
   /* flex-wrap: wrap; */
   /* justify-content: center; */
+  background-color: rgb(214, 210, 210);
   margin: 0 1rem;
+  margin-right: 3rem;
+  padding: 2rem 0;
+  border-radius: 10px;
   gap: 1rem;
-  width: 100vw;
+  width: 1080px;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* max-width: 900px; */
   /* grid-template-columns: repeat(); */
   /* background-color:antiquewhite; */
   /* grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); */
   /* grid-template-columns: repeat(auto-fit, minmax(400px, auto)); */
   /* grid-auto-columns: max-content; */
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 170px));
 }
 
 .album__container {
   margin: 3rem 1rem;
   display: flex;
   width: 100vw;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .name {
@@ -55,6 +67,7 @@ nav {
   padding: 1rem 0;
   background-color: brown;
   color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   letter-spacing: 3px;
 }
 
