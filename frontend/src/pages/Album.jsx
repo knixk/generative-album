@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-// recieve the image on port 
-import io from 'socket.io-client';
-const socket = io('http://localhost:3000');
+// recieve the image on port ------- receiver
+import io from "socket.io-client";
+const socket = io("http://localhost:3000");
 
 import img from "../assets/img.webp";
 
-// --- replace this with real data
+// --- replace this with real data ----
 const data = [
   {
     id: "1231d2",
@@ -56,11 +56,20 @@ const data = [
 ];
 
 function Album() {
+
+  const [albums, setAlbums] = useState(data)
+
+  useEffect(() => {
+    socket.on("update-album", () => {
+      // alert("yes")
+      
+    });
+  }, []);
   return (
     <div className="album__container">
       {/* <p>Your lovely creations..</p> */}
       <div className="album__grid">
-        {data.map((i) => {
+        {albums.map((i) => {
           return (
             <div className="card__container">
               <img className="generated__img" src={i.img} alt={i.name} />

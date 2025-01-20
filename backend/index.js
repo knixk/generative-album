@@ -17,6 +17,7 @@ io.on("connection", (socket) => {
 
   socket.on("new-image", (image) => {
     io.emit("update-album", image); // Broadcast to all clients
+    console.log("Received image and sendign to frontend")
   });
 });
 app.listen(port, mainFn);

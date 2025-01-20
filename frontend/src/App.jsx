@@ -14,25 +14,25 @@ function App() {
   const [submitDisabled, setSubmitDisabled] = useState(false);
 
   return (
-    <myContext.Provider
-      value={
-        (formData,
-        setFormData,
-        lastGeneratedImg,
-        setLastGeneratedImg,
-        submitDisabled,
-        setSubmitDisabled)
-      }
-    >
-      <Router>
+    <Router>
+      {/* <myContext.Provider
+        value={
+          (formData,
+          setFormData,
+          lastGeneratedImg,
+          setLastGeneratedImg,
+          submitDisabled,
+          setSubmitDisabled)
+        }
+      > */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/album" element={<Album />}></Route>
           <Route path="/main" element={<Main />}></Route>
         </Routes>
-      </Router>
-    </myContext.Provider>
+      {/* </myContext.Provider> */}
+    </Router>
   );
 }
 
