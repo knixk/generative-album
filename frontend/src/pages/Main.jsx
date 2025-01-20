@@ -15,9 +15,9 @@ function submitData(payload) {
 
 function Main() {
   // const myState = useContext(myContext);
-  console.log("==========================>");
+  // console.log("==========================>");
   // console.log(myState.formData);
-  console.log("==========================>");
+  // console.log("==========================>");
   // ---- send this prompt to the api
   const [name, setName] = useState();
   const [prompt, setPrompt] = useState();
@@ -88,9 +88,12 @@ function Main() {
     // await myAsyncFn();
 
     // img && submitData(img);
+
+
+    // now we got the image we can send it to the backend
     const myPayload = {
       name: name,
-      image: img,
+      image: "asdasd",
     };
 
     // only and only if the image is present then we make this call..
